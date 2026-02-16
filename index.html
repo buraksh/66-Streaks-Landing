@@ -7,8 +7,21 @@
     <title>66-Day Streak — Build One Habit. 66 Days.</title>
     <meta name="description"
         content="66-Day Streak is a streak-first habit builder designed to push you through 66 consecutive days. Backed by science. One habit at a time." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="preload" as="image" href="assets/logo.webp" type="image/webp">
     <meta name="theme-color" content="#111111" />
-    <link rel="icon" type="image/png" href="assets/logo.png" />
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <link rel="canonical" href="https://66daystreak.com/" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="66-Day Streak — Build One Habit. 66 Days.">
+    <meta name="twitter:description"
+        content="A streak-first habit builder. One habit at a time. 66 days to make it automatic.">
+    <meta name="twitter:image" content="https://66daystreak.com/assets/screenshot-2.webp">
 
     <!-- Open Graph -->
     <meta property="og:title" content="66-Day Streak — Build One Habit. 66 Days." />
@@ -29,7 +42,7 @@
     <header class="site-header">
         <div class="container">
             <a href="/" class="site-header__brand">
-                <img src="assets/logo.png" alt="66-Day Streak" />
+                <img src="assets/logo.webp" alt="66-Day Streak" width="36" height="36" />
                 <span>66-Day Streak</span>
             </a>
             <nav class="site-header__nav">
@@ -43,7 +56,7 @@
     <!-- ====== Hero ====== -->
     <section class="hero">
         <div class="container">
-            <img src="assets/logo.png" alt="66-Day Streak Logo" class="hero__logo" />
+            <img src="assets/logo.webp" alt="66-Day Streak Logo" class="hero__logo" width="100" height="100" />
             <h1 class="hero__title">
                 One habit.<br /><span class="brand-gradient-text">66 days.</span> A new you.
             </h1>
@@ -159,10 +172,12 @@
 
             <div class="screenshots__gallery reveal">
                 <div class="screenshots__item">
-                    <img src="assets/screenshot-1.png" alt="66-Day Streak — Progress Bar View" />
+                    <img src="assets/screenshot-1.webp" alt="66-Day Streak — Progress Bar View" width="1206"
+                        height="2622" loading="lazy" />
                 </div>
                 <div class="screenshots__item">
-                    <img src="assets/screenshot-2.png" alt="66-Day Streak — Grid View" />
+                    <img src="assets/screenshot-2.webp" alt="66-Day Streak — Grid View" width="1206" height="2622"
+                        loading="lazy" />
                 </div>
             </div>
         </div>
@@ -197,7 +212,7 @@
     <footer class="site-footer">
         <div class="container">
             <div class="site-footer__brand">
-                <img src="assets/logo.png" alt="66-Day Streak" />
+                <img src="assets/logo.webp" alt="66-Day Streak" width="24" height="24" loading="lazy" />
                 <span>66-Day Streak</span>
             </div>
             <div class="site-footer__links">
@@ -221,6 +236,27 @@
         document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
     </script>
 
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "66-Day Streak",
+      "operatingSystem": "iOS",
+      "applicationCategory": "HealthApplication",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "description": "66-Day Streak is a streak-first habit builder designed to push you through 66 consecutive days. Build one habit at a time.",
+      "image": "https://66daystreak.com/assets/logo.png",
+      "screenshot": "https://66daystreak.com/assets/screenshot-2.webp",
+      "author": {
+        "@type": "Person", 
+        "name": "Burak" 
+      }
+    }
+    </script>
 </body>
 
 </html>
